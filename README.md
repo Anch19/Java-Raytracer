@@ -1,75 +1,156 @@
-# Project-Raytracer1
-# Java Raytracer Project
+````md
+# Java-Raytracer
 
-![Raytracer Demo](https://ibb.co/z8kppNy)
+A lightweight **Java-based ray tracing engine** developed as a computer graphics and software engineering project.  
+The project focuses on implementing core rendering concepts from scratch, including ray-object intersections, shading models, 3D object loading, and acceleration structures for efficient rendering.
 
-This Java Raytracer project is a 3D rendering engine that simulates the behavior of light rays to create realistic images of scenes. It includes features like object hit calculation, shading, object reading, and acceleration structure using a bounding volume hierarchy (BVH).
-
-## Table of Contents
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Features
-The project includes the following features:
-- Object hit calculation for Plane and Sphere classes
-- Shading with CheckerBoard and Phong shaders
-- Object reading from OBJ files
-- Acceleration structure using a BVH
-- Supports reading Wavefront OBJ files
-
-## Getting Started
-These instructions will help you set up and run the Java Raytracer project on your local machine.
-
-### Prerequisites
-- Java Development Kit (JDK)
-- IDE (e.g., Eclipse, IntelliJ IDEA)
-- Git (optional, for cloning the project from GitHub)
-
-### Installation
-1. Clone or download the project from GitHub.
-https://github.com/Anch19/java-raytracer.git
-
-2. Open the project in your preferred IDE.
-
-### Dependencies
-The project uses standard Java libraries and does not require additional dependencies.
-
-## Usage
-Follow these steps to run the Raytracer:
-
-1. Open the project in your IDE.
-
-2. Locate the `Main` class in the `raytracer.core.def` package and run it.
-
-3. You can modify the scene by editing boolean variables in the `Main` class.
-
-4. View the output image in the project directory.
-
-## Contributing
-Contributions are welcome! If you'd like to enhance the project or fix issues, please follow these steps:
-
-1. Fork the project on GitHub.
-
-2. Clone your forked project to your local machine.
-
-3. Create a new branch for your feature or bug fix.
-
-4. Make your changes and test them thoroughly.
-
-5. Commit your changes with descriptive commit messages.
-
-6. Push your changes to your fork on GitHub.
-
-7. Create a pull request to the original repository.
-
-8. Wait for review and approval.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The renderer supports spheres, planes, triangle meshes, OBJ file loading, and realistic lighting using the **Phong illumination model**.
 
 ---
+
+# Features
+
+- Ray tracing engine implemented in Java
+- Sphere and plane rendering
+- Triangle mesh support
+- OBJ model loading
+- Phong shading implementation
+- Reflection and lighting calculations
+- BVH (Bounding Volume Hierarchy) acceleration structure
+- Modular object-oriented architecture
+- Scene rendering and image generation
+- Test package for validation and debugging
+
+---
+
+# Project Structure
+
+```bash
+Java-Raytracer/
+├── src/
+│   └── raytracer/
+│       ├── core/        # Rendering pipeline and ray tracing logic
+│       ├── geom/        # Geometric primitives and intersections
+│       ├── math/        # Vector and mathematical utilities
+│       ├── shade/       # Lighting and shading models
+│       ├── tests/       # Testing utilities
+│       └── Main.java
+│
+├── obj/                 # 3D object models (.obj files)
+├── README.md
+└── ...
+````
+
+---
+
+# Rendering Concepts Implemented
+
+## Ray Tracing
+
+The engine simulates the behavior of light rays to determine visible surfaces and lighting interactions within a 3D scene.
+
+## Phong Shading
+
+Implements ambient, diffuse, and specular lighting components for realistic illumination.
+
+## OBJ Model Loading
+
+Supports importing external `.obj` mesh files for rendering custom 3D geometry.
+
+## BVH Acceleration
+
+Uses Bounding Volume Hierarchies to reduce intersection tests and improve rendering performance.
+
+---
+
+# Technologies Used
+
+* Java
+* Object-Oriented Programming (OOP)
+* Computer Graphics Algorithms
+* BVH Spatial Acceleration
+* OBJ File Parsing
+
+---
+
+# How to Run
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/Anch19/Java-Raytracer.git
+cd Java-Raytracer
+```
+
+## Compile
+
+```bash
+javac src/raytracer/Main.java
+```
+
+## Run
+
+```bash
+java raytracer.Main
+```
+
+> The exact entry point may vary depending on your IDE or project setup.
+
+---
+
+# Example Features Demonstrated
+
+* Rendering spheres and planes
+* Mesh rendering using OBJ models
+* Shadow computation
+* Surface reflections
+* Lighting calculations
+* Scene intersection optimization
+
+---
+
+# Learning Outcomes
+
+This project was developed to strengthen understanding of:
+
+* Computer graphics fundamentals
+* Ray tracing algorithms
+* 3D mathematics and vector operations
+* Spatial acceleration structures
+* Object-oriented software design
+* Performance optimization techniques
+* Rendering pipelines
+
+---
+
+# Future Improvements
+
+Potential future enhancements include:
+
+* Texture mapping
+* Refraction and transparency
+* Anti-aliasing
+* Soft shadows
+* Multithreaded rendering
+* Global illumination
+* Real-time scene controls
+* GUI-based renderer preview
+
+---
+
+# Repository
+
+[https://github.com/Anch19/Java-Raytracer](https://github.com/Anch19/Java-Raytracer)
+
+---
+
+# Author
+
+Antriksh Chaudhary
+
+Computer Graphics & Rendering Project
+
+
+
 
 
